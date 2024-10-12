@@ -1,0 +1,36 @@
+cpythondeps = {
+    "windows":{    
+        "cpython" : {
+            "CPPPATH"     : ['./deps/windows/cpython/include'],
+            "LIBPATH"     : ['./deps/windows/cpython/libs'],
+            "BINPATH"     : ['./deps/windows/cpython'],
+            "LIBS"        : ['python312'],
+            "FRAMEWORKS"  : [],
+            "FRAMEWORKPATH" : [],
+            "CPPDEFINES"  : [],
+            "CXXFLAGS"    : [],
+            "CCFLAGS"     : [],
+            "SHLINKFLAGS" : [],
+            "LINKFLAGS"   : [],
+        },
+        "cpython_version" : "3.12.7",
+    },
+    "linux":{    
+        "cpython" : {
+            "CPPPATH"     : ['./deps/linux/cpython/include'],
+            "LIBPATH"     : ['./deps/linux/cpython/lib'],
+            "BINPATH"     : ['./deps/linux/cpython/bin'],
+            "LIBS"        : ['python3.11'],
+            "FRAMEWORKS"  : [],
+            "FRAMEWORKPATH" : [],
+            "CPPDEFINES"  : [],
+            "CXXFLAGS"    : [],
+            "CCFLAGS"     : [],
+            "SHLINKFLAGS" : [],
+            "LINKFLAGS"   : [],
+        },
+        "cpython_version" : "3.12.7",
+    }
+}
+
+Return('cpythondeps')

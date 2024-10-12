@@ -1,0 +1,56 @@
+import SCons.Environment
+import SCons.Script
+import SCons.Node
+import SCons.Node.FS
+import glob
+import SCons.Script.SConsOptions
+import compiler_options
+import post_actions
+import platform
+import scons_utils
+import unittest
+import sys
+import os
+from typing import Any, TYPE_CHECKING, Callable
+
+from site_scons import ALIAS_BUILD, ALIAS_PYTHON312, ALIAS_PYTHON312_API_TESTS, ALIAS_PYTHON312_PUBLISH_API, ALIAS_PYTHON312_UNITTESTS
+
+if TYPE_CHECKING:
+	env: SCons.Environment.Environment = SCons.Script.DefaultEnvironment()
+
+# * Import the parent Environment
+SCons.Script.Import('env')
+
+
+# * ---- Run Cross Language tests ----
+test_path = env.Dir('./tests').abspath
+def python3_cross_lang_test(target, source, env):
+	# execute "tests/run_api_tests.py"
+	curpath = os.getcwd()
+	try:
+		os.chdir(test_path)
+
+		custom_env = env.Clone()
+		if platform.system() == 'Windows':
+			if 'CGO_CFLAGS' in os.environ:
+				custom_env['ENV']['CGO_CFLAGS'] = os.environ['CGO_CFLAGS']
+			custom_env['ENV']['PATH'] = os.environ['PATH']
+		else:
+			if 'CGO_CFLAGS' in os.environ:
+				custom_env['ENV']['CGO_CFLAGS'] = os.environ['CGO_CFLAGS']
+			custom_env['ENV']['LD_LIBRARY_PATH'] = os.environ['LD_LIBRARY_PATH']
+
+		exit_code = custom_env.Execute(f'{scons_utils.python3_executable("3.12")} run_api_tests.py')
+		if exit_code:
+			print(f"Cross language tests failed: exit code {exit_code}", file=sys.stderr)
+			sys.exit(1)
+	except Exception as e:
+		print(f"Cross language tests failed: {e}", file=sys.stderr)
+		sys.exit(1)
+	finally:
+		os.chdir(curpath)
+
+python3_cross_lang_test_cmd = env.Command(target='python3_cross_lang_test', source=[], action=python3_cross_lang_test)
+env.Depends(python3_cross_lang_test_cmd, ALIAS_BUILD)
+SCons.Script.Alias(ALIAS_PYTHON312_API_TESTS, python3_cross_lang_test_cmd)
+	

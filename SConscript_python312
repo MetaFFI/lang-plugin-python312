@@ -1,0 +1,27 @@
+from ast import Return
+import SCons.Environment
+import SCons.Script
+
+from site_scons import ALIAS_API_TESTS, ALIAS_BUILD, ALIAS_CORE, ALIAS_CORE_UNITTESTS, ALIAS_PYTHON312, ALIAS_PYTHON312_API_TESTS, ALIAS_PYTHON312_UNITTESTS, ALIAS_UNITTESTS
+
+# * Import the parent Environment
+env: SCons.Environment.Environment
+SCons.Script.Import('env')
+env = env.Clone()
+
+# set the sdk path
+env['sdk_path'] = env.Dir('.').abspath + '/plugin-sdk'
+
+# * ---- Build MetaFFI Core Targets ----
+SCons.Script.SConscript(env['sdk_path']+'/SConscript_plugin-sdk', exports='env') # load plugin-sdk into the environment
+
+SCons.Script.SConscript(['runtime/SConscript_xllr-python312', # Python3 XLLR
+						#'compiler/SConscript_compiler-python312', # TODO: Python3 Compiler
+						#  'idl/SConscript_idl-python312', # TODO: Python3 IDL
+						  'api/SConscript_api-python3',
+						 ], exports='env')
+
+
+SCons.Script.Alias(ALIAS_BUILD, ALIAS_PYTHON312)
+SCons.Script.Alias(ALIAS_UNITTESTS, ALIAS_PYTHON312_UNITTESTS)
+SCons.Script.Alias(ALIAS_API_TESTS, ALIAS_PYTHON312_API_TESTS)

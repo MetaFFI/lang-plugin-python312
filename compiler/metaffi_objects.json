@@ -1,0 +1,1913 @@
+{
+	"idl_extension": ".py",
+	"idl_filename": "metaffi_objects",
+	"idl_filename_with_extension": "metaffi_objects.py",
+	"idl_full_path": "C:/src/github.com/MetaFFI/lang-plugin-python3/compiler/metaffi_objects.py",
+	"metaffi_guest_lib": "metaffi_objects_MetaFFIGuest",
+	"modules": [
+		{
+			"classes": [
+				{
+					"comment": "",
+					"constructors": [
+						{
+							"comment": "",
+							"entity_path": {
+								"entrypoint_function": "EntryPoint_metaffi_keyword_args_metaffi_keyword_args",
+								"metaffi_guest_lib": "metaffi_objects_MetaFFIGuest",
+								"module": "metaffi_objects"
+							},
+							"name": "metaffi_keyword_args",
+							"overload_index": 0,
+							"parameters": [
+							],
+							"return_values": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "ret_0",
+									"tags": {
+									},
+									"type": "handle",
+									"type_alias": "metaffi_keyword_args"
+								}
+							],
+							"tags": {
+							}
+						}
+					],
+					"fields": [
+					],
+					"entity_path": {
+						"module": "metaffi_objects"
+					},
+					"methods": [
+						{
+							"comment": "",
+							"entity_path": {
+								"entrypoint_function": "EntryPoint_metaffi_keyword_args___delattr__",
+								"metaffi_guest_lib": "metaffi_objects_MetaFFIGuest",
+								"module": "metaffi_objects"
+							},
+							"instance_required": true,
+							"name": "__delattr__",
+							"overload_index": 0,
+							"parameters": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "this_instance",
+									"tags": {
+									},
+									"type": "handle",
+									"type_alias": ""
+								},
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "name",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"return_values": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "ret_0",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"tags": {
+							}
+						},
+						{
+							"comment": "",
+							"entity_path": {
+								"entrypoint_function": "EntryPoint_metaffi_keyword_args___dir__",
+								"metaffi_guest_lib": "metaffi_objects_MetaFFIGuest",
+								"module": "metaffi_objects"
+							},
+							"instance_required": true,
+							"name": "__dir__",
+							"overload_index": 0,
+							"parameters": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "this_instance",
+									"tags": {
+									},
+									"type": "handle",
+									"type_alias": ""
+								}
+							],
+							"return_values": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "ret_0",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"tags": {
+							}
+						},
+						{
+							"comment": "",
+							"entity_path": {
+								"entrypoint_function": "EntryPoint_metaffi_keyword_args___eq__",
+								"metaffi_guest_lib": "metaffi_objects_MetaFFIGuest",
+								"module": "metaffi_objects"
+							},
+							"instance_required": true,
+							"name": "__eq__",
+							"overload_index": 0,
+							"parameters": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "this_instance",
+									"tags": {
+									},
+									"type": "handle",
+									"type_alias": ""
+								},
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "other",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"return_values": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "ret_0",
+									"tags": {
+									},
+									"type": "bool",
+									"type_alias": ""
+								}
+							],
+							"tags": {
+							}
+						},
+						{
+							"comment": "",
+							"entity_path": {
+								"entrypoint_function": "EntryPoint_metaffi_keyword_args___format__",
+								"metaffi_guest_lib": "metaffi_objects_MetaFFIGuest",
+								"module": "metaffi_objects"
+							},
+							"instance_required": true,
+							"name": "__format__",
+							"overload_index": 0,
+							"parameters": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "this_instance",
+									"tags": {
+									},
+									"type": "handle",
+									"type_alias": ""
+								},
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "format_spec",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"return_values": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "ret_0",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"tags": {
+							}
+						},
+						{
+							"comment": "",
+							"entity_path": {
+								"entrypoint_function": "EntryPoint_metaffi_keyword_args___ge__",
+								"metaffi_guest_lib": "metaffi_objects_MetaFFIGuest",
+								"module": "metaffi_objects"
+							},
+							"instance_required": true,
+							"name": "__ge__",
+							"overload_index": 0,
+							"parameters": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "this_instance",
+									"tags": {
+									},
+									"type": "handle",
+									"type_alias": ""
+								},
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "value",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"return_values": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "ret_0",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"tags": {
+							}
+						},
+						{
+							"comment": "",
+							"entity_path": {
+								"entrypoint_function": "EntryPoint_metaffi_keyword_args___getattribute__",
+								"metaffi_guest_lib": "metaffi_objects_MetaFFIGuest",
+								"module": "metaffi_objects"
+							},
+							"instance_required": true,
+							"name": "__getattribute__",
+							"overload_index": 0,
+							"parameters": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "this_instance",
+									"tags": {
+									},
+									"type": "handle",
+									"type_alias": ""
+								},
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "name",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"return_values": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "ret_0",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"tags": {
+							}
+						},
+						{
+							"comment": "",
+							"entity_path": {
+								"entrypoint_function": "EntryPoint_metaffi_keyword_args___getitem__",
+								"metaffi_guest_lib": "metaffi_objects_MetaFFIGuest",
+								"module": "metaffi_objects"
+							},
+							"instance_required": true,
+							"name": "__getitem__",
+							"overload_index": 0,
+							"parameters": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "this_instance",
+									"tags": {
+									},
+									"type": "handle",
+									"type_alias": ""
+								},
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "item",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"return_values": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "ret_0",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"tags": {
+							}
+						},
+						{
+							"comment": "",
+							"entity_path": {
+								"entrypoint_function": "EntryPoint_metaffi_keyword_args___getstate__",
+								"metaffi_guest_lib": "metaffi_objects_MetaFFIGuest",
+								"module": "metaffi_objects"
+							},
+							"instance_required": true,
+							"name": "__getstate__",
+							"overload_index": 0,
+							"parameters": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "this_instance",
+									"tags": {
+									},
+									"type": "handle",
+									"type_alias": ""
+								}
+							],
+							"return_values": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "ret_0",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"tags": {
+							}
+						},
+						{
+							"comment": "",
+							"entity_path": {
+								"entrypoint_function": "EntryPoint_metaffi_keyword_args___gt__",
+								"metaffi_guest_lib": "metaffi_objects_MetaFFIGuest",
+								"module": "metaffi_objects"
+							},
+							"instance_required": true,
+							"name": "__gt__",
+							"overload_index": 0,
+							"parameters": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "this_instance",
+									"tags": {
+									},
+									"type": "handle",
+									"type_alias": ""
+								},
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "other",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"return_values": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "ret_0",
+									"tags": {
+									},
+									"type": "bool",
+									"type_alias": ""
+								}
+							],
+							"tags": {
+							}
+						},
+						{
+							"comment": "",
+							"entity_path": {
+								"entrypoint_function": "EntryPoint_metaffi_keyword_args___le__",
+								"metaffi_guest_lib": "metaffi_objects_MetaFFIGuest",
+								"module": "metaffi_objects"
+							},
+							"instance_required": true,
+							"name": "__le__",
+							"overload_index": 0,
+							"parameters": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "this_instance",
+									"tags": {
+									},
+									"type": "handle",
+									"type_alias": ""
+								},
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "value",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"return_values": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "ret_0",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"tags": {
+							}
+						},
+						{
+							"comment": "",
+							"entity_path": {
+								"entrypoint_function": "EntryPoint_metaffi_keyword_args___lt__",
+								"metaffi_guest_lib": "metaffi_objects_MetaFFIGuest",
+								"module": "metaffi_objects"
+							},
+							"instance_required": true,
+							"name": "__lt__",
+							"overload_index": 0,
+							"parameters": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "this_instance",
+									"tags": {
+									},
+									"type": "handle",
+									"type_alias": ""
+								},
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "other",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"return_values": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "ret_0",
+									"tags": {
+									},
+									"type": "bool",
+									"type_alias": ""
+								}
+							],
+							"tags": {
+							}
+						},
+						{
+							"comment": "",
+							"entity_path": {
+								"entrypoint_function": "EntryPoint_metaffi_keyword_args___ne__",
+								"metaffi_guest_lib": "metaffi_objects_MetaFFIGuest",
+								"module": "metaffi_objects"
+							},
+							"instance_required": true,
+							"name": "__ne__",
+							"overload_index": 0,
+							"parameters": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "this_instance",
+									"tags": {
+									},
+									"type": "handle",
+									"type_alias": ""
+								},
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "value",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"return_values": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "ret_0",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"tags": {
+							}
+						},
+						{
+							"comment": "",
+							"entity_path": {
+								"entrypoint_function": "EntryPoint_metaffi_keyword_args___reduce__",
+								"metaffi_guest_lib": "metaffi_objects_MetaFFIGuest",
+								"module": "metaffi_objects"
+							},
+							"instance_required": true,
+							"name": "__reduce__",
+							"overload_index": 0,
+							"parameters": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "this_instance",
+									"tags": {
+									},
+									"type": "handle",
+									"type_alias": ""
+								}
+							],
+							"return_values": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "ret_0",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"tags": {
+							}
+						},
+						{
+							"comment": "",
+							"entity_path": {
+								"entrypoint_function": "EntryPoint_metaffi_keyword_args___reduce_ex__",
+								"metaffi_guest_lib": "metaffi_objects_MetaFFIGuest",
+								"module": "metaffi_objects"
+							},
+							"instance_required": true,
+							"name": "__reduce_ex__",
+							"overload_index": 0,
+							"parameters": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "this_instance",
+									"tags": {
+									},
+									"type": "handle",
+									"type_alias": ""
+								},
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "protocol",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"return_values": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "ret_0",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"tags": {
+							}
+						},
+						{
+							"comment": "",
+							"entity_path": {
+								"entrypoint_function": "EntryPoint_metaffi_keyword_args___repr__",
+								"metaffi_guest_lib": "metaffi_objects_MetaFFIGuest",
+								"module": "metaffi_objects"
+							},
+							"instance_required": true,
+							"name": "__repr__",
+							"overload_index": 0,
+							"parameters": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "this_instance",
+									"tags": {
+									},
+									"type": "handle",
+									"type_alias": ""
+								}
+							],
+							"return_values": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "ret_0",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"tags": {
+							}
+						},
+						{
+							"comment": "",
+							"entity_path": {
+								"entrypoint_function": "EntryPoint_metaffi_keyword_args___setattr__",
+								"metaffi_guest_lib": "metaffi_objects_MetaFFIGuest",
+								"module": "metaffi_objects"
+							},
+							"instance_required": true,
+							"name": "__setattr__",
+							"overload_index": 0,
+							"parameters": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "this_instance",
+									"tags": {
+									},
+									"type": "handle",
+									"type_alias": ""
+								},
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "name",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								},
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "value",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"return_values": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "ret_0",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"tags": {
+							}
+						},
+						{
+							"comment": "",
+							"entity_path": {
+								"entrypoint_function": "EntryPoint_metaffi_keyword_args___sizeof__",
+								"metaffi_guest_lib": "metaffi_objects_MetaFFIGuest",
+								"module": "metaffi_objects"
+							},
+							"instance_required": true,
+							"name": "__sizeof__",
+							"overload_index": 0,
+							"parameters": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "this_instance",
+									"tags": {
+									},
+									"type": "handle",
+									"type_alias": ""
+								}
+							],
+							"return_values": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "ret_0",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"tags": {
+							}
+						},
+						{
+							"comment": "",
+							"entity_path": {
+								"entrypoint_function": "EntryPoint_metaffi_keyword_args___str__",
+								"metaffi_guest_lib": "metaffi_objects_MetaFFIGuest",
+								"module": "metaffi_objects"
+							},
+							"instance_required": true,
+							"name": "__str__",
+							"overload_index": 0,
+							"parameters": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "this_instance",
+									"tags": {
+									},
+									"type": "handle",
+									"type_alias": ""
+								}
+							],
+							"return_values": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "ret_0",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"tags": {
+							}
+						},
+						{
+							"comment": "",
+							"entity_path": {
+								"entrypoint_function": "EntryPoint_metaffi_keyword_args_set_arg",
+								"metaffi_guest_lib": "metaffi_objects_MetaFFIGuest",
+								"module": "metaffi_objects"
+							},
+							"instance_required": true,
+							"name": "set_arg",
+							"overload_index": 0,
+							"parameters": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "this_instance",
+									"tags": {
+									},
+									"type": "handle",
+									"type_alias": ""
+								},
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "keyword",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								},
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "val",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"return_values": [
+							],
+							"tags": {
+							}
+						}
+					],
+					"name": "metaffi_keyword_args",
+					"release": {
+						"comment": "Releases object",
+						"entity_path": {
+							"entrypoint_function": "EntryPoint_metaffi_keyword_args_Releasemetaffi_keyword_args",
+							"metaffi_guest_lib": "metaffi_objects_MetaFFIGuest",
+							"module": "metaffi_objects"
+						},
+						"instance_required": true,
+						"name": "Releasemetaffi_keyword_args",
+						"overload_index": 0,
+						"parameters": [
+							{
+								"comment": "",
+								"dimensions": 0,
+								"is_optional": false,
+								"name": "this_instance",
+								"tags": {
+								},
+								"type": "handle",
+								"type_alias": ""
+							}
+						],
+						"return_values": [
+						],
+						"tags": {
+						}
+					},
+					"tags": {
+					}
+				},
+				{
+					"comment": "",
+					"constructors": [
+						{
+							"comment": "",
+							"entity_path": {
+								"entrypoint_function": "EntryPoint_metaffi_positional_args_metaffi_positional_args",
+								"metaffi_guest_lib": "metaffi_objects_MetaFFIGuest",
+								"module": "metaffi_objects"
+							},
+							"name": "metaffi_positional_args",
+							"overload_index": 0,
+							"parameters": [
+							],
+							"return_values": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "ret_0",
+									"tags": {
+									},
+									"type": "handle",
+									"type_alias": "metaffi_positional_args"
+								}
+							],
+							"tags": {
+							}
+						}
+					],
+					"fields": [
+						{
+							"comment": "",
+							"dimensions": 0,
+							"getter": {
+								"comment": "",
+								"entity_path": {
+									"entrypoint_function": "EntryPoint_metaffi_positional_args_Gett",
+									"metaffi_guest_lib": "metaffi_objects_MetaFFIGuest",
+									"module": "metaffi_objects"
+								},
+								"instance_required": true,
+								"name": "Gett",
+								"overload_index": 0,
+								"parameters": [
+									{
+										"comment": "",
+										"dimensions": 0,
+										"is_optional": false,
+										"name": "this_instance",
+										"tags": {
+										},
+										"type": "handle",
+										"type_alias": ""
+									}
+								],
+								"return_values": [
+									{
+										"comment": "",
+										"dimensions": 0,
+										"is_optional": false,
+										"name": "t",
+										"tags": {
+										},
+										"type": "handle",
+										"type_alias": ""
+									}
+								],
+								"tags": {
+									"receiver_pointer": "true"
+								}
+							},
+							"is_optional": false,
+							"name": "t",
+							"setter": {
+								"comment": "",
+								"entity_path": {
+									"entrypoint_function": "EntryPoint_metaffi_positional_args_Sett",
+									"metaffi_guest_lib": "metaffi_objects_MetaFFIGuest",
+									"module": "metaffi_objects"
+								},
+								"instance_required": true,
+								"name": "Sett",
+								"overload_index": 0,
+								"parameters": [
+									{
+										"comment": "",
+										"dimensions": 0,
+										"is_optional": false,
+										"name": "this_instance",
+										"tags": {
+										},
+										"type": "handle",
+										"type_alias": ""
+									},
+									{
+										"comment": "",
+										"dimensions": 0,
+										"is_optional": false,
+										"name": "t",
+										"tags": {
+										},
+										"type": "handle",
+										"type_alias": ""
+									}
+								],
+								"return_values": [
+								],
+								"tags": {
+									"receiver_pointer": "true"
+								}
+							},
+							"tags": {
+							},
+							"type": "handle",
+							"type_alias": ""
+						}
+					],
+					"entity_path": {
+						"module": "metaffi_objects"
+					},
+					"methods": [
+						{
+							"comment": "",
+							"entity_path": {
+								"entrypoint_function": "EntryPoint_metaffi_positional_args___delattr__",
+								"metaffi_guest_lib": "metaffi_objects_MetaFFIGuest",
+								"module": "metaffi_objects"
+							},
+							"instance_required": true,
+							"name": "__delattr__",
+							"overload_index": 0,
+							"parameters": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "this_instance",
+									"tags": {
+									},
+									"type": "handle",
+									"type_alias": ""
+								},
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "name",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"return_values": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "ret_0",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"tags": {
+							}
+						},
+						{
+							"comment": "",
+							"entity_path": {
+								"entrypoint_function": "EntryPoint_metaffi_positional_args___dir__",
+								"metaffi_guest_lib": "metaffi_objects_MetaFFIGuest",
+								"module": "metaffi_objects"
+							},
+							"instance_required": true,
+							"name": "__dir__",
+							"overload_index": 0,
+							"parameters": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "this_instance",
+									"tags": {
+									},
+									"type": "handle",
+									"type_alias": ""
+								}
+							],
+							"return_values": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "ret_0",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"tags": {
+							}
+						},
+						{
+							"comment": "",
+							"entity_path": {
+								"entrypoint_function": "EntryPoint_metaffi_positional_args___eq__",
+								"metaffi_guest_lib": "metaffi_objects_MetaFFIGuest",
+								"module": "metaffi_objects"
+							},
+							"instance_required": true,
+							"name": "__eq__",
+							"overload_index": 0,
+							"parameters": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "this_instance",
+									"tags": {
+									},
+									"type": "handle",
+									"type_alias": ""
+								},
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "other",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"return_values": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "ret_0",
+									"tags": {
+									},
+									"type": "bool",
+									"type_alias": ""
+								}
+							],
+							"tags": {
+							}
+						},
+						{
+							"comment": "",
+							"entity_path": {
+								"entrypoint_function": "EntryPoint_metaffi_positional_args___format__",
+								"metaffi_guest_lib": "metaffi_objects_MetaFFIGuest",
+								"module": "metaffi_objects"
+							},
+							"instance_required": true,
+							"name": "__format__",
+							"overload_index": 0,
+							"parameters": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "this_instance",
+									"tags": {
+									},
+									"type": "handle",
+									"type_alias": ""
+								},
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "format_spec",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"return_values": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "ret_0",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"tags": {
+							}
+						},
+						{
+							"comment": "",
+							"entity_path": {
+								"entrypoint_function": "EntryPoint_metaffi_positional_args___ge__",
+								"metaffi_guest_lib": "metaffi_objects_MetaFFIGuest",
+								"module": "metaffi_objects"
+							},
+							"instance_required": true,
+							"name": "__ge__",
+							"overload_index": 0,
+							"parameters": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "this_instance",
+									"tags": {
+									},
+									"type": "handle",
+									"type_alias": ""
+								},
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "value",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"return_values": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "ret_0",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"tags": {
+							}
+						},
+						{
+							"comment": "",
+							"entity_path": {
+								"entrypoint_function": "EntryPoint_metaffi_positional_args___getattribute__",
+								"metaffi_guest_lib": "metaffi_objects_MetaFFIGuest",
+								"module": "metaffi_objects"
+							},
+							"instance_required": true,
+							"name": "__getattribute__",
+							"overload_index": 0,
+							"parameters": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "this_instance",
+									"tags": {
+									},
+									"type": "handle",
+									"type_alias": ""
+								},
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "name",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"return_values": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "ret_0",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"tags": {
+							}
+						},
+						{
+							"comment": "",
+							"entity_path": {
+								"entrypoint_function": "EntryPoint_metaffi_positional_args___getstate__",
+								"metaffi_guest_lib": "metaffi_objects_MetaFFIGuest",
+								"module": "metaffi_objects"
+							},
+							"instance_required": true,
+							"name": "__getstate__",
+							"overload_index": 0,
+							"parameters": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "this_instance",
+									"tags": {
+									},
+									"type": "handle",
+									"type_alias": ""
+								}
+							],
+							"return_values": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "ret_0",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"tags": {
+							}
+						},
+						{
+							"comment": "",
+							"entity_path": {
+								"entrypoint_function": "EntryPoint_metaffi_positional_args___gt__",
+								"metaffi_guest_lib": "metaffi_objects_MetaFFIGuest",
+								"module": "metaffi_objects"
+							},
+							"instance_required": true,
+							"name": "__gt__",
+							"overload_index": 0,
+							"parameters": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "this_instance",
+									"tags": {
+									},
+									"type": "handle",
+									"type_alias": ""
+								},
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "other",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"return_values": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "ret_0",
+									"tags": {
+									},
+									"type": "bool",
+									"type_alias": ""
+								}
+							],
+							"tags": {
+							}
+						},
+						{
+							"comment": "",
+							"entity_path": {
+								"entrypoint_function": "EntryPoint_metaffi_positional_args___hash__",
+								"metaffi_guest_lib": "metaffi_objects_MetaFFIGuest",
+								"module": "metaffi_objects"
+							},
+							"instance_required": true,
+							"name": "__hash__",
+							"overload_index": 0,
+							"parameters": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "this_instance",
+									"tags": {
+									},
+									"type": "handle",
+									"type_alias": ""
+								}
+							],
+							"return_values": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "ret_0",
+									"tags": {
+									},
+									"type": "int64",
+									"type_alias": ""
+								}
+							],
+							"tags": {
+							}
+						},
+						{
+							"comment": "",
+							"entity_path": {
+								"entrypoint_function": "EntryPoint_metaffi_positional_args___le__",
+								"metaffi_guest_lib": "metaffi_objects_MetaFFIGuest",
+								"module": "metaffi_objects"
+							},
+							"instance_required": true,
+							"name": "__le__",
+							"overload_index": 0,
+							"parameters": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "this_instance",
+									"tags": {
+									},
+									"type": "handle",
+									"type_alias": ""
+								},
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "value",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"return_values": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "ret_0",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"tags": {
+							}
+						},
+						{
+							"comment": "",
+							"entity_path": {
+								"entrypoint_function": "EntryPoint_metaffi_positional_args___lt__",
+								"metaffi_guest_lib": "metaffi_objects_MetaFFIGuest",
+								"module": "metaffi_objects"
+							},
+							"instance_required": true,
+							"name": "__lt__",
+							"overload_index": 0,
+							"parameters": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "this_instance",
+									"tags": {
+									},
+									"type": "handle",
+									"type_alias": ""
+								},
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "other",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"return_values": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "ret_0",
+									"tags": {
+									},
+									"type": "bool",
+									"type_alias": ""
+								}
+							],
+							"tags": {
+							}
+						},
+						{
+							"comment": "",
+							"entity_path": {
+								"entrypoint_function": "EntryPoint_metaffi_positional_args___ne__",
+								"metaffi_guest_lib": "metaffi_objects_MetaFFIGuest",
+								"module": "metaffi_objects"
+							},
+							"instance_required": true,
+							"name": "__ne__",
+							"overload_index": 0,
+							"parameters": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "this_instance",
+									"tags": {
+									},
+									"type": "handle",
+									"type_alias": ""
+								},
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "value",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"return_values": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "ret_0",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"tags": {
+							}
+						},
+						{
+							"comment": "",
+							"entity_path": {
+								"entrypoint_function": "EntryPoint_metaffi_positional_args___reduce__",
+								"metaffi_guest_lib": "metaffi_objects_MetaFFIGuest",
+								"module": "metaffi_objects"
+							},
+							"instance_required": true,
+							"name": "__reduce__",
+							"overload_index": 0,
+							"parameters": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "this_instance",
+									"tags": {
+									},
+									"type": "handle",
+									"type_alias": ""
+								}
+							],
+							"return_values": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "ret_0",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"tags": {
+							}
+						},
+						{
+							"comment": "",
+							"entity_path": {
+								"entrypoint_function": "EntryPoint_metaffi_positional_args___reduce_ex__",
+								"metaffi_guest_lib": "metaffi_objects_MetaFFIGuest",
+								"module": "metaffi_objects"
+							},
+							"instance_required": true,
+							"name": "__reduce_ex__",
+							"overload_index": 0,
+							"parameters": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "this_instance",
+									"tags": {
+									},
+									"type": "handle",
+									"type_alias": ""
+								},
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "protocol",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"return_values": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "ret_0",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"tags": {
+							}
+						},
+						{
+							"comment": "",
+							"entity_path": {
+								"entrypoint_function": "EntryPoint_metaffi_positional_args___repr__",
+								"metaffi_guest_lib": "metaffi_objects_MetaFFIGuest",
+								"module": "metaffi_objects"
+							},
+							"instance_required": true,
+							"name": "__repr__",
+							"overload_index": 0,
+							"parameters": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "this_instance",
+									"tags": {
+									},
+									"type": "handle",
+									"type_alias": ""
+								}
+							],
+							"return_values": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "ret_0",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"tags": {
+							}
+						},
+						{
+							"comment": "",
+							"entity_path": {
+								"entrypoint_function": "EntryPoint_metaffi_positional_args___setattr__",
+								"metaffi_guest_lib": "metaffi_objects_MetaFFIGuest",
+								"module": "metaffi_objects"
+							},
+							"instance_required": true,
+							"name": "__setattr__",
+							"overload_index": 0,
+							"parameters": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "this_instance",
+									"tags": {
+									},
+									"type": "handle",
+									"type_alias": ""
+								},
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "name",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								},
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "value",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"return_values": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "ret_0",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"tags": {
+							}
+						},
+						{
+							"comment": "",
+							"entity_path": {
+								"entrypoint_function": "EntryPoint_metaffi_positional_args___sizeof__",
+								"metaffi_guest_lib": "metaffi_objects_MetaFFIGuest",
+								"module": "metaffi_objects"
+							},
+							"instance_required": true,
+							"name": "__sizeof__",
+							"overload_index": 0,
+							"parameters": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "this_instance",
+									"tags": {
+									},
+									"type": "handle",
+									"type_alias": ""
+								}
+							],
+							"return_values": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "ret_0",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"tags": {
+							}
+						},
+						{
+							"comment": "",
+							"entity_path": {
+								"entrypoint_function": "EntryPoint_metaffi_positional_args___str__",
+								"metaffi_guest_lib": "metaffi_objects_MetaFFIGuest",
+								"module": "metaffi_objects"
+							},
+							"instance_required": true,
+							"name": "__str__",
+							"overload_index": 0,
+							"parameters": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "this_instance",
+									"tags": {
+									},
+									"type": "handle",
+									"type_alias": ""
+								}
+							],
+							"return_values": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "ret_0",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"tags": {
+							}
+						},
+						{
+							"comment": "",
+							"entity_path": {
+								"entrypoint_function": "EntryPoint_metaffi_positional_args_set_arg",
+								"metaffi_guest_lib": "metaffi_objects_MetaFFIGuest",
+								"module": "metaffi_objects"
+							},
+							"instance_required": true,
+							"name": "set_arg",
+							"overload_index": 0,
+							"parameters": [
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "this_instance",
+									"tags": {
+									},
+									"type": "handle",
+									"type_alias": ""
+								},
+								{
+									"comment": "",
+									"dimensions": 0,
+									"is_optional": false,
+									"name": "val",
+									"tags": {
+									},
+									"type": "any",
+									"type_alias": ""
+								}
+							],
+							"return_values": [
+							],
+							"tags": {
+							}
+						}
+					],
+					"name": "metaffi_positional_args",
+					"release": {
+						"comment": "Releases object",
+						"entity_path": {
+							"entrypoint_function": "EntryPoint_metaffi_positional_args_Releasemetaffi_positional_args",
+							"metaffi_guest_lib": "metaffi_objects_MetaFFIGuest",
+							"module": "metaffi_objects"
+						},
+						"instance_required": true,
+						"name": "Releasemetaffi_positional_args",
+						"overload_index": 0,
+						"parameters": [
+							{
+								"comment": "",
+								"dimensions": 0,
+								"is_optional": false,
+								"name": "this_instance",
+								"tags": {
+								},
+								"type": "handle",
+								"type_alias": ""
+							}
+						],
+						"return_values": [
+						],
+						"tags": {
+						}
+					},
+					"tags": {
+					}
+				}
+			],
+			"comment": "",
+			"external_resources": [
+				"metaffi_objects"
+			],
+			"functions": [
+			],
+			"globals": [
+			],
+			"name": "metaffi_objects",
+			"tags": {
+			}
+		}
+	],
+	"target_language": "python3"
+}

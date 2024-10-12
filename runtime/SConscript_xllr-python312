@@ -1,0 +1,110 @@
+from math import e
+import sys
+import SCons.Environment
+import SCons.Script
+import SCons.Node
+import SCons.Node.FS
+import glob
+import SCons.Script.SConsOptions
+from colorama import Fore
+import compiler_options
+import post_actions
+import platform
+import scons_utils
+from site_scons import ALIAS_PYTHON312, ALIAS_PYTHON312_UNITTESTS
+import os
+
+# * Import the parent Environment
+env: SCons.Environment.Environment
+SCons.Script.Import('env')
+
+
+# * ---- Build XLLR dynamic library ----
+if env.IsWindows():
+	env.LoadConanPackagesInfo('conanfile.txt', 'SConscript_conandeps_windows')
+elif env.IsLinux():
+	env.LoadConanPackagesInfo('conanfile.txt', 'SConscript_conandeps_linux')
+else:
+	print(f'{Fore.RED}Unsupported platform: {platform.system()}{Fore.RESET}')
+	sys.exit(1)
+
+cpython_info = SCons.Script.SConscript('SConscript_cpythondeps')
+if env.IsWindows():
+	cpython_info = cpython_info['windows']
+elif env.IsLinux():
+	cpython_info = cpython_info['linux']
+else:
+	print(f'{Fore.RED}Unsupported platform: {platform.system()}{Fore.RESET}')
+	sys.exit(1)
+
+env.Append(CPPDEFINES=cpython_info['cpython'].get('CPPDEFINES', []))
+env.Append(CPPFLAGS=cpython_info['cpython'].get('CPPFLAGS', []))
+env.Append(CPPPATH=cpython_info['cpython'].get('CPPPATH', []))
+env.Append(LIBS=cpython_info['cpython'].get('LIBS', []))
+env.Append(LIBPATH=cpython_info['cpython'].get('LIBPATH', []))
+
+
+source = env['sdk_src']
+source += [s for s in glob.glob(env.Dir('.').abspath + '/*.cpp') if not s.endswith("_test.cpp")]
+
+includes = [env['sdk_path']]
+includes.append(env.Dir('.').abspath)
+
+if platform.system() == 'Linux' or platform.system() == 'Darwin':
+	env.Append(LINKFLAGS=['-Wl,-rpath,\\$$ORIGIN'])
+
+xllr_python312_dylib = env.CPPSharedLibrary(target='xllr.python312', project_name='python312', sources=source, include_dirs=includes)
+xllr_python312_install = env.Install(env['METAFFI_HOME']+'/python312', xllr_python312_dylib) # install only dll.
+
+# * --- Install dependencies ---
+os_deps_dir_name = "windows" if env.IsWindows() else "linux"
+files_to_install = [env.Dir(".").Dir("deps").Dir(os_deps_dir_name).Dir("cpython")] # cpython 3.11 runtime
+files_to_install.append(env.SearchConanBinaryFile('boost', f'*boost_filesystem*'))
+if not env.IsWindows(): # non-windows also uses boost thread
+	files_to_install.append(env.SearchConanBinaryFile('boost', f'*boost_thread*'))
+	files_to_install.append(env.SearchConanBinaryFile('boost', f'*boost_stacktrace_from_exception*'))
+
+	
+SCons.Script.Alias(ALIAS_PYTHON312, [xllr_python312_dylib, xllr_python312_install])
+
+# # to be used by other targets in the project as dependency
+env['xllr_python312_dylib'] = xllr_python312_dylib
+
+# * --- Unit Tests ---
+env_test = env.Clone()
+
+includes = []
+includes.extend(env['sdk_includes'])
+includes.append(env['sdk_path'])
+
+libs = []
+lib_dirs = []
+if env_test.IsWindows():
+	libs.append('xllr.python312.lib')
+	lib_dirs.append(xllr_python312_dylib[0].dir.abspath)
+else:
+	libs.append('-l:xllr.python312.so')
+	lib_dirs.append(env_test['METAFFI_HOME']+'/python312')
+
+# dependent on XLLR dynamic library
+metaffi_home = env_test['METAFFI_HOME']
+
+# add python3.11 to the PATH
+if env_test.IsWindows():
+	env_test['ENV']['PATH'] += ';'+(env_test.Dir("./deps/windows/cpython").abspath)
+
+python_runtime_test: SCons.Node.NodeList = env_test.CPPProgram(target='python_runtime_test',
+															project_name='python312',
+															sources=[
+																env_test.Dir('.').File('python_runtime_test.cpp').abspath
+															],
+															include_dirs=[
+																includes
+															],
+															lib_dirs=lib_dirs,
+															libs=libs)
+
+env_test.AddPostAction(python_runtime_test, post_actions.execute_doctest_unitest)
+env_test.Depends(python_runtime_test, ALIAS_PYTHON312)
+
+SCons.Script.Alias(ALIAS_PYTHON312_UNITTESTS, python_runtime_test)

@@ -1,0 +1,12 @@
+#!/bin/sh
+''':'
+__file__="$0"
+while [ -L "$__file__" ]; do
+    __file__="$(dirname "$__file__")/$(readlink "$__file__")"
+done
+exec "$(dirname "$__file__")/python3.12" "$0" "$@"
+'''
+
+import pydoc
+if __name__ == '__main__':
+    pydoc.cli()

@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: metaffi-api
+Version: 0.0.47
+Summary: Python MetaFFI API
+Author: T. CS.
+Requires-Python: >=3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development
+Project-URL: Home, https://github.com/MetaFFI/lang-plugin-python3/

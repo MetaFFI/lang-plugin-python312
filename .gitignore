@@ -1,0 +1,78 @@
+# ------------- vscode -------------
+.vscode
+.vs
+# ------------- CLion -------------
+.idea
+
+# ------------- CMake -------------
+build/
+cmake-build*
+output*
+
+out/*
+
+# ------------ Python -------------
+*__pycache__*
+
+# -------------- C++ --------------
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# -------------- Go --------------
+
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+go.sum
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Dependency directories (remove the comment below to include it)
+vendor/
+/api/dist/
+/api/metaffi_api.egg-info/
+/dist/
+
+*SConscript_conandeps*
+
+# ignore symbolic links
+runtime/deps/linux/cpython/bin/2to3
+runtime/deps/linux/cpython/bin/idle3
+runtime/deps/linux/cpython/bin/pydoc3
+runtime/deps/linux/cpython/bin/python
+runtime/deps/linux/cpython/bin/python3
+runtime/deps/linux/cpython/bin/python3-config
